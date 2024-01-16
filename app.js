@@ -1,11 +1,10 @@
 import createError from 'http-errors';
-import express from 'express';
 import path from'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import { fileURLToPath } from "url";
-
-var app = express();
+import express from 'express';
+const app = express();
 
 // view engine setup
 
@@ -40,5 +39,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// module.exports = app;
 export default app;
