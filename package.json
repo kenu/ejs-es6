@@ -2,9 +2,9 @@
   "name": "okdev",
   "version": "0.0.0",
   "private": true,
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
